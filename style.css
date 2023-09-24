@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: SF Pro Display;
+    box-sizing: border-box;
+}
+
+
+
+/* NAVBAR */
+
+.containerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 87%;
+    margin: 39px 95px;
+    max-height: 74px;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99;
+}
+
+.imgBackground {
+background: url("./img/imgBanner.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+min-height:740px;
+}
+
+.menuHamburguesaNav {
+    display: none;
+}
+
+.imgLogoMoon {
+    display: flex;
+}
+
+.rowNav {
+    display: flex
+}
+
+.ulNav {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+}
+
+.flechaNav {
+    font-size: 15px;
+    padding-left: 5px;
+    font-weight: 100;
+}
+
+.ulNav li {
+    padding: 50px 20px;
+    font-size: 13px;
+}
+
+.ulNav li:hover .verticalNav {
+    display: block;
+}
+
+.verticalNav {
+    position:absolute;
+    display: none;
+    list-style: none;
+    width: 198px;
+    background-color:#fff;
+    border: 1px solid #fff;
+    margin-top: 50px;
+    padding-right: 30px;
+}
+
+.verticalNav a {
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    font-weight: 400;
+    color: black;
+    margin: 35px 32px;
+}
+
+.verticalNav a:hover {
+    text-decoration:underline;
+}
+
+.verticalNav span {
+    font-weight: 700;
+}
+
+.logosNav {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.logosNav img {
+    padding: 15px;
+}
+
+
+
+/* HEADER */
+
+header h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 0px 15px;
+}
+
+.contedorSale {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.cardSale{
+    position: absolute;
+    width: 80px;
+    top: 10%;
+    left: 91%;
+    padding: 5px 10px;
+    background-color: black;
+    text-align: start;
+    font-size: 15px;
+    transform: translate(-50%,-50%);
+}
+
+.cardSale span {
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cardPie {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardPie h4 {
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.cardPie p {
+    font-weight: 700;
+}
+
+.cardPrecios {
+    display: flex;
+}
+
+.cardDescuento, .cardPrecios del{
+    padding-right: 5px;
+    color: #B3B3B3;
+}
+
+.cardFav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* MAIN */
+
+.contenedorMain {
+    background: url("./img/imgFooter.jpg");
+    min-height: 447px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: 100px;
+}
+
+.rowMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 200px;
+}
+
+.rowMain h2 {
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.rowMain h4 {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.rowMain a {
+    text-decoration: none;
+}
+
+.rowMain a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: black;
+}
+
+.contenedorFooter {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletterFooter {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 26px;
+}
+
+.newsletterFooter h2 {
+    font-weight: 200;
+}
+
+.newsletterFooter span {
+    font-size: 30px;
+    margin-left: 0.2em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.suscripcionFooter {
+    display: flex;
+    width: 650px;
+    min-height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suscripcionFooter input {
+    padding-left: 40px;
+    width: 400px;
+    min-height: 60px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.suscripcionFooter input::placeholder { color: rgb(0, 0, 0)}
+
+.suscripcionFooter p {
+    color: black;
+    font-weight: 600;
+    padding-right: 25px;
+}
+
+
+
+
+/* MEDIAQUERYS */
+
+@media (max-width:1400px){
+    .containerCards {
+        display: grid;
+	    place-items: center;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1100px){
+    .ulNav li {
+        padding: 50px 5px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:890px){
+
+    /* NAVBAR */
+
+    .containerNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 87%;
+        margin: 39px 7%;
+        max-height: 74px;
+        padding: 10px 40px;
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 99;
+    }
+
+    .menuHamburguesaNav {
+        display: block;
+    }
+
+    .ulNav {
+        display: none;
+    }
+
+    .logosNav img:nth-child(1), .logosNav img:nth-child(2) {
+        display: none;
+    }
+
+    .imgBackground {
+        background: url("./img/imgBannerMobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height:800px;
+        }
+
+
+
+        /* MAIN */
+
+        .contenedorMain {
+            background: url("./img/imgFooterMobile.png");
+            min-height: 34vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            margin-top: 100px;
+        }
+
+        .rowMain {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            margin-left: 40px;
+            margin-bottom: 60px;
+        }
+
+
+
+        /* FOOTER */
+
+        .newsletterFooter {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 26px;
+        }
+
+        .suscripcionFooter {
+            display: flex;
+            width: 60%;
+            min-height: 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .suscripcionFooter input {
+            padding-left: 40px;
+            width: 400px;
+            min-height: 60px;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0);
+            border: 0;
+        }
+}
+
+@media (max-width:520px){
+
+    /* NAVBAR */
+
+    .imgLogoMoon {
+        width: 8em;
+        margin-left: 1em;
+    }
+
+
+
+    /* HEADER */
+
+    .containerCards img:nth-child(1){
+        height: 300px;
+    }
+
+    .cardFav img {
+        height: 13px !important; 
+        width: 10px;
+    }
+
+    .cardSale{
+        width: 60px;
+        left: 87%;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+
+
+
+    /* FOOTER */
+
+
+    .suscripcionFooter {
+        display: flex;
+        width: 40%;
+        min-height: 60px;
+        background-color: rgba(255, 255, 255, 0.9);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .suscripcionFooter p {
+        display: none;
+    }
+}
